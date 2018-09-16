@@ -19,4 +19,10 @@ public class HelloController {
     public String randdomString(){
         return randomString;
     }
+
+    @RequestMapping("/springApplicationJson")
+    public String springApplicationJson(){
+        return System.getProperty("SPRING_APPLICATION_JSON");
+    }
+
 }
